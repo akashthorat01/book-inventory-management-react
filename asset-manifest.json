@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/book-inventory-management-react/static/css/main.9bbe9ca3.css",
-    "main.js": "/book-inventory-management-react/static/js/main.7a438af9.js",
-    "static/js/453.968de157.chunk.js": "/book-inventory-management-react/static/js/453.968de157.chunk.js",
+    "main.css": "/book-inventory-management-react/static/css/main.e718baed.css",
+    "main.js": "/book-inventory-management-react/static/js/main.ecebee9c.js",
     "index.html": "/book-inventory-management-react/index.html",
-    "main.9bbe9ca3.css.map": "/book-inventory-management-react/static/css/main.9bbe9ca3.css.map",
-    "main.7a438af9.js.map": "/book-inventory-management-react/static/js/main.7a438af9.js.map",
-    "453.968de157.chunk.js.map": "/book-inventory-management-react/static/js/453.968de157.chunk.js.map"
+    "main.e718baed.css.map": "/book-inventory-management-react/static/css/main.e718baed.css.map",
+    "main.ecebee9c.js.map": "/book-inventory-management-react/static/js/main.ecebee9c.js.map"
   },
   "entrypoints": [
-    "static/css/main.9bbe9ca3.css",
-    "static/js/main.7a438af9.js"
+    "static/css/main.e718baed.css",
+    "static/js/main.ecebee9c.js"
   ]
 }

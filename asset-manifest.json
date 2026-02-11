@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/book-inventory-management-react/static/css/main.e718baed.css",
-    "main.js": "/book-inventory-management-react/static/js/main.ecebee9c.js",
+    "main.js": "/book-inventory-management-react/static/js/main.10faf4cb.js",
     "index.html": "/book-inventory-management-react/index.html",
     "main.e718baed.css.map": "/book-inventory-management-react/static/css/main.e718baed.css.map",
-    "main.ecebee9c.js.map": "/book-inventory-management-react/static/js/main.ecebee9c.js.map"
+    "main.10faf4cb.js.map": "/book-inventory-management-react/static/js/main.10faf4cb.js.map"
   },
   "entrypoints": [
     "static/css/main.e718baed.css",
-    "static/js/main.ecebee9c.js"
+    "static/js/main.10faf4cb.js"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/book-inventory-management-react/static/css/main.e718baed.css",
+    "main.js": "/book-inventory-management-react/static/js/main.ecebee9c.js",
+    "index.html": "/book-inventory-management-react/index.html",
+    "main.e718baed.css.map": "/book-inventory-management-react/static/css/main.e718baed.css.map",
+    "main.ecebee9c.js.map": "/book-inventory-management-react/static/js/main.ecebee9c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e718baed.css",
+    "static/js/main.ecebee9c.js"
+  ]
+}

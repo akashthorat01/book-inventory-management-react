@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { getBooks, deleteBook } from "../services/api";
 import { useNavigate } from "react-router-dom";
 import { Pagination } from "@mui/material";
 import Loader from "./Loader";
 import ThemeSelector from "./ThemeSelector";
+import booksData from "../data/books.json";
 import {
     Table,
     TableBody,
@@ -36,20 +36,20 @@ export default function BookTable({ setPrimaryColor }) {
 
     const navigate = useNavigate();
 
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            loadBooks();
+        }, 1500);
+
+        return () => clearTimeout(timer);
+    }, []);
+
     const loadBooks = async () => {
-  const res = await getBooks();
-  setBooks(res.data);
-  setLoading(false);
-};
+        setBooks(booksData);
+        setLoading(false);
+    };
 
 
-   useEffect(() => {
-  const timer = setTimeout(() => {
-    loadBooks();
-  }, 1500); // 3 seconds loader
-
-  return () => clearTimeout(timer);
-}, []);
 
 
 
@@ -82,15 +82,15 @@ export default function BookTable({ setPrimaryColor }) {
 
     // ✅ Confirm delete
     const handleConfirmDelete = async () => {
-        await deleteBook(selectedId);
+        // Working with local JSON data: remove the book from state
+        setBooks((prev) => prev.filter((b) => b.id !== selectedId));
         setOpen(false);
         setSelectedId(null);
-        loadBooks();
     };
 
-   if (loading) {
-  return <Loader />;
-}
+    if (loading) {
+        return <Loader />;
+    }
 
 
 

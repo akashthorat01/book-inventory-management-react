@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { ThemeProvider, CssBaseline } from "@mui/material";
 import { useState } from "react";
 
@@ -17,19 +17,17 @@ function App() {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <CssBaseline />
-      <BrowserRouter>
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+      {/* Remove BrowserRouter from here */}
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
 
-        <Routes>
-          <Route path="/" element={<BookTable />} />
-          <Route path="/add" element={<BookForm />} />
-          <Route path="/edit/:id" element={<BookForm />} />
-          <Route path="/details/:id" element={<BookDetails />} />
+      <Routes>
+        <Route path="/" element={<BookTable />} />
+        <Route path="/add" element={<BookForm />} />
+        <Route path="/edit/:id" element={<BookForm />} />
+        <Route path="/details/:id" element={<BookDetails />} />
         <Route path="/search-online" element={<OnlineBookSearch />} />
         <Route path="/admin" element={<BookTable role="admin" />} />
-
-        </Routes>
-      </BrowserRouter>
+      </Routes>
     </ThemeProvider>
   );
 }
